@@ -20,4 +20,10 @@ public class Cleric {
 		System.out.println("MPが" + recoveractual + "回復した");
 		System.out.println("最終MPは" + this.mp + "でした");
 	}
+
+	public void heal(Hero h) {
+		h.hp += 10;
+		System.out.println(this.name + "はヒールを唱えた！");
+		System.out.println(h.name + "のHPを10回復した！");
+	}
 }
