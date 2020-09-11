@@ -7,6 +7,8 @@ public class Main {
 		Hero h = new Hero("ミナト");
 		h.sword = s;
 
+		Superhero sh = new Superhero();
+
 		Matango m1 = new Matango();
 		m1.hp = 50;
 		m1.suffix = 'A';
@@ -31,5 +33,6 @@ public class Main {
 		m1.run();
 		m2.run();
 		h.run();
+		sh.run();
 	}
 }
