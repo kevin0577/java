@@ -25,14 +25,19 @@ public class Hero {
 		System.out.println(s + "のダメージ");
 	}
 
-	public void attack(int a) {
-		System.out.println(this.name + "は" + this.sword.name + "で攻撃した！");
-		System.out.println("敵に" + a + "のダメージを与えた！");
+	public void attack(Matango m1) {
+		System.out.println(this.name  + "は攻撃した！");
+		m1.hp -= 10;
+		System.out.println("敵に10のダメージを与えた！");
 	}
 
 	public void run() {
 		System.out.println(this.name + "は、逃げ出した！");
 		System.out.println("GAMEOVER");
+	}
+
+	public void victory() {
 		System.out.println("最終HPは" + this.hp + "でした");
+		System.out.println("戦闘に勝利しました！");
 	}
 }

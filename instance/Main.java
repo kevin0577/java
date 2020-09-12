@@ -9,13 +9,13 @@ public class Main {
 
 		Superhero sh = new Superhero();
 
-		Matango m1 = new Matango();
+		Matango m1 = new Matango('A');
 		m1.hp = 50;
-		m1.suffix = 'A';
 
-		Matango m2 = new Matango();
+		Matango m2 = new Matango('B');
 		m2.hp = 40;
-		m2.suffix = 'B';
+
+		PoisonMatango pm = new PoisonMatango('毒');
 
 		Cleric c = new Cleric();
 		c.name = "アスカ";
@@ -26,13 +26,15 @@ public class Main {
 		c.selfaid();
 		c.pray(1);
 		h.sit(5);
-		h.slip(50);
-		h.sit(25);
+		h.slip(10);
+		h.sit(5);
 		c.heal(h);
-		h.attack(10);
+		h.attack(m1);
+		sh.attack(m1);
+		pm.attack(h);
 		m1.run();
 		m2.run();
-		h.run();
-		sh.run();
+		pm.run();
+		h.victory();
 	}
 }
