@@ -2,9 +2,9 @@ public class Monster {
 	String name;
 	int hp;
 
-	public Monster(String name) {
+	public Monster(String name, int hp) {
 		this.name = name;
-		this.hp =30;
+		this.hp =hp;
 	}
 
 	public void attack(Hero h, int a) {

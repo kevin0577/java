@@ -2,8 +2,8 @@ public class Sword {
 	String name;
 	int damage;
 
-	public Sword(String name) {
+	public Sword(String name, int a) {
 		this.name = name;
-		this.damage = 10;
+		this.damage = a;
 	}
 }
