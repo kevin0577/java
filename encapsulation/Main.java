@@ -3,7 +3,7 @@ public class Main {
 		Hero h = new Hero();
 		Monster m = new Slime();
 
-		h.setName("アスカ");
+		h.setName("");
 		System.out.println(h.hp + h.getName());
 		h.attack();
 		m.attack();
