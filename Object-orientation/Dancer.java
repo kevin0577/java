@@ -2,6 +2,9 @@ public class Dancer extends Character {
 	public Dancer() {
 		super("アスカ", 100);
 	}
+	public void run() {
+		System.out.println(this.name + "サササっと逃げ出した");
+	}
 	public void dance() {
 		System.out.println(this.name + "は踊った");
 	}
